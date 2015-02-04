@@ -3,13 +3,14 @@
 namespace FrontendBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 class FrontPageController extends Controller
 {
 	/**
-     * @Route("/", name="home")
+     * @Route("/", name="front_page")
 	 * @Template()
      */
     public function indexAction()
