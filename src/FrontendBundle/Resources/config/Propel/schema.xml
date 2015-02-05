@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="default" namespace="FrontendBundle\Propel" defaultIdMethod="native">
+    <table name="document" phpName="Document" idMethod="native">
+        <column name="id"             type="integer" primaryKey="true" autoIncrement="true" required="true" />
+		<column name="name"           type="varchar" size="255" required="true" />
+        <column name="version"        type="varchar" size="100" required="true" />
+        <column name="description"    type="longvarchar" required="false" />
+        <column name="finalized_at"   type="timestamp" required="false" />
+        <column name="cloned_from_id" type="integer" required="false" />
+        <column name="cloned_at"      type="timestamp" required="false" />
+        <behavior name="timestampable">
+            <parameter name="create_column" value="created_at" />
+            <parameter name="update_column" value="updated_at" />
+        </behavior>
+        <foreign-key foreignTable="document" phpName="ClonedFrom" name="document_document" onDelete="SET NULL">
+            <reference local="cloned_from_id" foreign="id" />
+        </foreign-key>
+        <unique name="version">
+            <unique-column name="version" />
+        </unique>
+    </table>
+    <table name="section" phpName="Section" idMethod="native">
+        <column name="id"         type="integer" primaryKey="true" autoIncrement="true" required="true" />
+        <column name="section_id" type="integer" required="true" />
+        <column name="title"      type="varchar" size="125" required="false" />
+        <column name="content"    type="longvarchar" required="false" />
+        <behavior name="nested_set">
+            <parameter name="left_column"  value="tree_lft" />
+            <parameter name="right_column" value="tree_rgt" />
+            <parameter name="level_column" value="level" />
+            <parameter name="use_scope"    value="true" />
+            <parameter name="scope_column" value="document_id" />
+        </behavior>
+        <foreign-key foreignTable="document" name="section_document" onDelete="CASCADE">
+            <reference local="section_id" foreign="id" />
+        </foreign-key>
+    </table>
+</database>
