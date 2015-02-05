@@ -17,6 +17,7 @@ class AppKernel extends Kernel
             new Propel\PropelBundle\PropelBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+			new UAM\Bundle\BootstrapBundle\UAMBootstrapBundle(),
             new FrontendBundle\FrontendBundle(),
         );
 
