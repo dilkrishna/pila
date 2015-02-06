@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "93ebcf240ad97a840bc30469dfad5146",
+    "hash": "6c870b08dd2c0b2cd1f69878984eaaf4",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1654,6 +1654,116 @@
     ],
     "packages-dev": [
         {
+            "name": "fabpot/php-cs-fixer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
+                "reference": "0971d85a5e0a91bb0d8b0ee5abe890d285691acb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/0971d85a5e0a91bb0d8b0ee5abe890d285691acb",
+                "reference": "0971d85a5e0a91bb0d8b0ee5abe890d285691acb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.6",
+                "sebastian/diff": "~1.1",
+                "symfony/console": "~2.1",
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/filesystem": "~2.1",
+                "symfony/finder": "~2.1",
+                "symfony/process": "~2.3",
+                "symfony/stopwatch": "~2.5"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "0.7.*@dev"
+            },
+            "bin": [
+                "php-cs-fixer"
+            ],
+            "type": "application",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\CS\\": "Symfony/CS/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dariusz Rumiński",
+                    "email": "dariusz.ruminski@gmail.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "A script to automatically fix Symfony Coding Standard",
+            "time": "2015-02-03 21:37:41"
+        },
+        {
+            "name": "sebastian/diff",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/diff.git",
+                "reference": "5843509fed39dee4b356a306401e9dd1a931fec7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/5843509fed39dee4b356a306401e9dd1a931fec7",
+                "reference": "5843509fed39dee4b356a306401e9dd1a931fec7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kore Nordmann",
+                    "email": "mail@kore-nordmann.de"
+                },
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                }
+            ],
+            "description": "Diff implementation",
+            "homepage": "http://www.github.com/sebastianbergmann/diff",
+            "keywords": [
+                "diff"
+            ],
+            "time": "2014-08-15 10:29:00"
+        },
+        {
             "name": "sensio/generator-bundle",
             "version": "v2.5.1",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
@@ -1705,7 +1815,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "friendsofsymfony/user-bundle": 20
+        "friendsofsymfony/user-bundle": 20,
+        "fabpot/php-cs-fixer": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
