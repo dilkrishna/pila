@@ -15,8 +15,8 @@
         <foreign-key foreignTable="document" phpName="ClonedFrom" name="document_document" onDelete="SET NULL">
             <reference local="cloned_from_id" foreign="id" />
         </foreign-key>
-        <unique name="version"
-            <unique-column name="version" />
+        <unique name="version">
+		    <unique-column name="version" />
         </unique>
     </table>
     <table name="section" phpName="Section" idMethod="native">
