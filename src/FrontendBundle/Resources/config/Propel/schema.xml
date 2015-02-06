@@ -16,7 +16,7 @@
             <reference local="cloned_from_id" foreign="id" />
         </foreign-key>
         <unique name="version">
-		    <unique-column name="version" />
+        <unique-column name="version" />
         </unique>
     </table>
     <table name="section" phpName="Section" idMethod="native">
