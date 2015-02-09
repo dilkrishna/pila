@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6c870b08dd2c0b2cd1f69878984eaaf4",
+    "hash": "ad16e4e3aa7c14eec594e763027cda6e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1659,12 +1659,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "0971d85a5e0a91bb0d8b0ee5abe890d285691acb"
+                "reference": "68292892ad9d950c0578e77eee4d9645b6d47508"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/0971d85a5e0a91bb0d8b0ee5abe890d285691acb",
-                "reference": "0971d85a5e0a91bb0d8b0ee5abe890d285691acb",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/68292892ad9d950c0578e77eee4d9645b6d47508",
+                "reference": "68292892ad9d950c0578e77eee4d9645b6d47508",
                 "shasum": ""
             },
             "require": {
@@ -1709,7 +1709,7 @@
                 }
             ],
             "description": "A script to automatically fix Symfony Coding Standard",
-            "time": "2015-02-03 21:37:41"
+            "time": "2015-02-08 18:30:05"
         },
         {
             "name": "sebastian/diff",
