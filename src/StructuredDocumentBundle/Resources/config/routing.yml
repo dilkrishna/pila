@@ -1,0 +1,3 @@
+structured_document_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: StructuredDocumentBundle:Default:index }
