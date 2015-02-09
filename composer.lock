@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ad16e4e3aa7c14eec594e763027cda6e",
+    "hash": "0f40d86703a99bb30464515e84dba313",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1568,6 +1568,51 @@
             "time": "2015-01-16 04:50:58"
         },
         {
+            "name": "uam/structured-document-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.united-asian.com:editor/StructuredDocumentBundle.git",
+                "reference": "c2f452ae4e05ee1fdacf84cab93a8e0c4189d697"
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "UAM\\Bundle\\StructuredDocumentBundle\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Coopers Peele Limited",
+                    "email": "info@coopers-peele.com",
+                    "homepage": "http://www.coopers-peele.com"
+                }
+            ],
+            "description": "Symfony bundle to manage your app's terms of service",
+            "homepage": "https://github.com/coopers-peele/CPTermsBundle",
+            "keywords": [
+                "bundle",
+                "symfony",
+                "terms",
+                "terms and conditions",
+                "terms of service",
+                "tos"
+            ],
+            "time": "2015-02-09 08:00:08"
+        },
+        {
             "name": "uam/user-bundle",
             "version": "4.1.0",
             "source": {
@@ -1816,6 +1861,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "friendsofsymfony/user-bundle": 20,
+        "uam/structured-document-bundle": 20,
         "fabpot/php-cs-fixer": 20
     },
     "prefer-stable": false,

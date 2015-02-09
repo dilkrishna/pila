@@ -9,7 +9,7 @@
         "repositories": [
         {
             "type": "composer",
-            "url": "http://satis.united-asian.com/uam"
+            "url": "http://satis.united-asian.com/editor"
         }
     ],
     "require": {
@@ -26,7 +26,8 @@
         "friendsofsymfony/user-bundle": "2.0.*@dev",
         "willdurand/propel-typehintable-behavior": "~1.0",
         "uam/bootstrap-bundle": "~4.1",
-        "uam/user-bundle": "~4.0"
+        "uam/user-bundle": "~4.0",
+        "uam/structured-document-bundle": "dev-master"
     },
     "require-dev": {
         "fabpot/php-cs-fixer": "2.0.*@dev",
