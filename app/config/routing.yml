@@ -1,9 +1,9 @@
-structured_document:
-    resource: "@StructuredDocumentBundle/Resources/config/routing.yml"
-    prefix:   /
-
 frontend:
     resource: "@FrontendBundle/Resources/config/routing.yml"
+    prefix:   /
+
+uam_document:
+    resource: "@UAMStructuredDocumentBundle/Controller"
     prefix:   /
 
 fos_user:
