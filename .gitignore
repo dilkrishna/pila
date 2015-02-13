@@ -8,3 +8,5 @@
 /app/propel/sql
 /vendor/
 /web/bundles/
+/web/js/
+/web/css/
