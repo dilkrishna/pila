@@ -7,6 +7,117 @@
     "hash": "0f40d86703a99bb30464515e84dba313",
     "packages": [
         {
+            "name": "cebe/markdown",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cebe/markdown.git",
+                "reference": "9d6c36d6623497523ed421a31d940bc1d7435578"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cebe/markdown/zipball/9d6c36d6623497523ed421a31d940bc1d7435578",
+                "reference": "9d6c36d6623497523ed421a31d940bc1d7435578",
+                "shasum": ""
+            },
+            "require": {
+                "lib-pcre": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "cebe/indent": "*",
+                "facebook/xhprof": "*@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "bin": [
+                "bin/markdown"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "cebe\\markdown\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc",
+                    "homepage": "http://cebe.cc/",
+                    "role": "Creator"
+                }
+            ],
+            "description": "A super fast, highly extensible markdown parser for PHP",
+            "homepage": "https://github.com/cebe/markdown#readme",
+            "keywords": [
+                "extensible",
+                "fast",
+                "gfm",
+                "markdown",
+                "markdown-extra"
+            ],
+            "time": "2014-10-25 16:16:49"
+        },
+        {
+            "name": "cogpowered/finediff",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cogpowered/FineDiff.git",
+                "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cogpowered/FineDiff/zipball/339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
+                "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "*",
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "cogpowered\\FineDiff": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Crowe",
+                    "email": "rob@cogpowered.com"
+                },
+                {
+                    "name": "Raymond Hill"
+                }
+            ],
+            "description": "PHP implementation of a Fine granularity Diff engine",
+            "homepage": "https://github.com/cogpowered/FineDiff",
+            "keywords": [
+                "diff",
+                "finediff",
+                "opcode",
+                "string",
+                "text"
+            ],
+            "time": "2014-05-19 10:25:02"
+        },
+        {
             "name": "doctrine/annotations",
             "version": "v1.2.3",
             "source": {
@@ -412,6 +523,54 @@
             "time": "2014-09-09 13:34:57"
         },
         {
+            "name": "dzango/twig-truncate-extension",
+            "version": "1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dzango/TwigTruncateExtension.git",
+                "reference": "8f08c351125a9fc210e183f076e433f78c7baf74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dzango/TwigTruncateExtension/zipball/8f08c351125a9fc210e183f076e433f78c7baf74",
+                "reference": "8f08c351125a9fc210e183f076e433f78c7baf74",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "twig/twig": "~1.12"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dzango\\Twig\\Extension\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dzango SARL",
+                    "email": "info@dzango.com",
+                    "homepage": "http://www.dzango.com"
+                }
+            ],
+            "description": "A Twig extension to truncate text while preserving HTML tags",
+            "homepage": "https://github.com/dzango/TwigTruncateExtension",
+            "keywords": [
+                "truncate",
+                "twig"
+            ],
+            "time": "2014-09-07 23:14:47"
+        },
+        {
             "name": "friendsofsymfony/user-bundle",
             "version": "dev-master",
             "source": {
@@ -678,16 +837,16 @@
         },
         {
             "name": "phing/phing",
-            "version": "2.9.1",
+            "version": "2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phingofficial/phing.git",
-                "reference": "393edeffa8a85d43636ce0c9b4deb1ff9ac60a5c"
+                "reference": "4927448a7bda2e1408d5fcbf7f725dc5bdcaf76d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phingofficial/phing/zipball/393edeffa8a85d43636ce0c9b4deb1ff9ac60a5c",
-                "reference": "393edeffa8a85d43636ce0c9b4deb1ff9ac60a5c",
+                "url": "https://api.github.com/repos/phingofficial/phing/zipball/4927448a7bda2e1408d5fcbf7f725dc5bdcaf76d",
+                "reference": "4927448a7bda2e1408d5fcbf7f725dc5bdcaf76d",
                 "shasum": ""
             },
             "require": {
@@ -696,7 +855,7 @@
             "require-dev": {
                 "ext-pdo_sqlite": "*",
                 "lastcraft/simpletest": "@dev",
-                "pdepend/pdepend": "1.x",
+                "pdepend/pdepend": "2.x",
                 "pear-pear.php.net/http_request2": "2.2.x",
                 "pear-pear.php.net/net_growl": "2.7.x",
                 "pear-pear.php.net/pear_packagefilemanager": "1.7.x",
@@ -707,9 +866,10 @@
                 "pear/versioncontrol_svn": "@dev",
                 "phpdocumentor/phpdocumentor": "2.x",
                 "phploc/phploc": "2.x",
+                "phpmd/phpmd": "~2.2",
                 "phpunit/phpunit": ">=3.7",
                 "sebastian/phpcpd": "2.x",
-                "squizlabs/php_codesniffer": "1.5.x"
+                "squizlabs/php_codesniffer": "~2.2"
             },
             "suggest": {
                 "pdepend/pdepend": "PHP version of JDepend",
@@ -763,7 +923,7 @@
                 "task",
                 "tool"
             ],
-            "time": "2014-12-03 09:18:46"
+            "time": "2015-02-09 20:05:38"
         },
         {
             "name": "propel/propel-bundle",
@@ -1573,11 +1733,17 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.united-asian.com:editor/StructuredDocumentBundle.git",
-                "reference": "c2f452ae4e05ee1fdacf84cab93a8e0c4189d697"
+                "reference": "c8ab4dafba017b17e889b4b81523c9205a84d755"
             },
             "require": {
+                "cebe/markdown": "*",
+                "cogpowered/finediff": "0.3.*",
+                "dzango/twig-truncate-extension": "~1.0",
                 "php": ">=5.3.3",
-                "symfony/framework-bundle": "~2.0"
+                "propel/propel-bundle": "~1.4",
+                "sensio/framework-extra-bundle": "~3.0",
+                "symfony/framework-bundle": "~2.0",
+                "willdurand/propel-typehintable-behavior": "1.0.*"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1600,17 +1766,13 @@
                     "homepage": "http://www.coopers-peele.com"
                 }
             ],
-            "description": "Symfony bundle to manage your app's terms of service",
+            "description": "UAM Structured Document Bundle",
             "homepage": "https://github.com/coopers-peele/CPTermsBundle",
             "keywords": [
                 "bundle",
-                "symfony",
-                "terms",
-                "terms and conditions",
-                "terms of service",
-                "tos"
+                "symfony"
             ],
-            "time": "2015-02-09 08:00:08"
+            "time": "2015-02-12 09:00:02"
         },
         {
             "name": "uam/user-bundle",
@@ -1704,12 +1866,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "68292892ad9d950c0578e77eee4d9645b6d47508"
+                "reference": "8210cb267be79b74b2792a8f52283e3fee49e967"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/68292892ad9d950c0578e77eee4d9645b6d47508",
-                "reference": "68292892ad9d950c0578e77eee4d9645b6d47508",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/8210cb267be79b74b2792a8f52283e3fee49e967",
+                "reference": "8210cb267be79b74b2792a8f52283e3fee49e967",
                 "shasum": ""
             },
             "require": {
@@ -1754,7 +1916,7 @@
                 }
             ],
             "description": "A script to automatically fix Symfony Coding Standard",
-            "time": "2015-02-08 18:30:05"
+            "time": "2015-02-10 23:49:23"
         },
         {
             "name": "sebastian/diff",
@@ -1810,17 +1972,17 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "9e23fc3de265ae013690d84aab98e7a84f46edcd"
+                "reference": "4b09746520a826a7bf34a466ba31c7d8740fef7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/9e23fc3de265ae013690d84aab98e7a84f46edcd",
-                "reference": "9e23fc3de265ae013690d84aab98e7a84f46edcd",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/4b09746520a826a7bf34a466ba31c7d8740fef7e",
+                "reference": "4b09746520a826a7bf34a466ba31c7d8740fef7e",
                 "shasum": ""
             },
             "require": {
@@ -1854,7 +2016,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2015-01-13 07:33:46"
+            "time": "2015-02-11 07:21:23"
         }
     ],
     "aliases": [],
