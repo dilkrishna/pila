@@ -37,6 +37,7 @@ assetic:
     use_controller: false
     bundles:
         - UAMBootstrapBundle
+        - FrontendBundle
 
     #java: /usr/bin/java
     filters:

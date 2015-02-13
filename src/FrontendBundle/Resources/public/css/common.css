@@ -1,0 +1,104 @@
+body {
+	font-family: "Lato", sans-serif;
+}
+
+header {
+	background-color: #28638c;
+}
+
+header .header-top {
+	padding-bottom: 20px;
+	padding-top: 12px;
+}
+
+header .affix {
+	top: 0;
+	width: 100%;
+}
+
+header .header-bottom .header-logo-responsive {
+	background-color: #28638c;
+	color: #ffffff;
+	padding: 10px 10px 5px;
+}
+
+header .header-bottom .header-logo-responsive a {
+	display: inline-block;
+	position: relative;
+}
+
+header .header-bottom .header-logo-responsive .navbar-btn {
+	font-size: 20px;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+header .header-bottom .navbar {
+	border-bottom: 0;
+	margin-bottom: 0;
+	min-height: 0;
+}
+
+header .header-bottom .navbar li:first-child a {
+	border-radius: 3px 0 0 0;
+}
+
+header .header-bottom .navbar li:last-child a {
+	border-radius: 0 3px 0 0;
+}
+
+header .header-bottom .navbar a {
+	border-color: #0c3c5c;
+	border-style: solid;
+	border-width: 1px 0 0 1px;
+	border-bottom: 0;
+}
+
+header .header-bottom .navbar a:hover {
+	background-color: #175074;
+	color: #ffffff;
+}
+
+header .header-bottom .navbar li.active a {
+	background-color: #f4f4f3;
+	color: #0b3d5c;
+}
+
+.main .page-header {
+	background-color: #f4f4f3;
+	color: #0b3d5c;
+	margin: 0 0 10px 0;
+	padding: 0 0 9px 15px;
+}
+
+.main .content {
+	padding: 5px 0;
+}
+
+.tab-pane {
+	margin-top: 10px;
+}
+
+.loading {
+	text-align: center;
+}
+
+@media (max-width: 767px) {
+	header .container {
+		padding: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	header .header-bottom .navbar-nav > li > a {
+		background-color: #124769;
+		color: #c2ced6;
+		padding: 4px 13px 6px 13px;
+	}
+
+	.navbar-nav .navbar-text {
+		color: #c2ced6;
+		margin: 0;
+		padding: 4px 13px 6px 13px;
+	}
+}
