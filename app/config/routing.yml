@@ -4,7 +4,7 @@ frontend:
 
 uam_document:
     resource: "@UAMStructuredDocumentBundle/Controller"
-    prefix:   /
+    prefix:   /document
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
