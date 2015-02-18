@@ -10,6 +10,10 @@
         {
             "type": "composer",
             "url": "http://satis.united-asian.com/editor"
+        },
+        {
+            "type": "composer",
+            "url": "http://satis.united-asian.com/uam"
         }
     ],
     "require": {
