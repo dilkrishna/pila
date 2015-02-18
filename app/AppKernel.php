@@ -17,10 +17,11 @@ class AppKernel extends Kernel
             new Propel\PropelBundle\PropelBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
 			new UAM\Bundle\BootstrapBundle\UAMBootstrapBundle(),
-            new FrontendBundle\FrontendBundle(),
 			new UAM\Bundle\StructuredDocumentBundle\UAMStructuredDocumentBundle(),
             new UAM\Bundle\UserBundle\UAMUserBundle(),
+            new FrontendBundle\FrontendBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
