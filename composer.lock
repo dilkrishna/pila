@@ -927,21 +927,22 @@
         },
         {
             "name": "propel/propel-bundle",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "target-dir": "Propel/PropelBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/propelorm/PropelBundle.git",
-                "reference": "0aee6aa0c952fde9eadc512936a3f5af07a56306"
+                "reference": "45d983116d8e2ef9b1ea9986f04579944d822fc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/propelorm/PropelBundle/zipball/0aee6aa0c952fde9eadc512936a3f5af07a56306",
-                "reference": "0aee6aa0c952fde9eadc512936a3f5af07a56306",
+                "url": "https://api.github.com/repos/propelorm/PropelBundle/zipball/45d983116d8e2ef9b1ea9986f04579944d822fc7",
+                "reference": "45d983116d8e2ef9b1ea9986f04579944d822fc7",
                 "shasum": ""
             },
             "require": {
                 "propel/propel1": "~1.6",
+                "symfony/propel1-bridge": "~2.3",
                 "symfony/symfony": "~2.4"
             },
             "require-dev": {
@@ -970,7 +971,7 @@
                 "persistence",
                 "propel"
             ],
-            "time": "2014-10-01 15:25:21"
+            "time": "2015-02-16 10:50:20"
         },
         {
             "name": "propel/propel1",
