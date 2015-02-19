@@ -1985,12 +1985,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "2f0712fe3aeb7124e2e23dbbcd0710c50a26f125"
+                "reference": "da54f8bab6ed35ebc204309723a2f20e20c6a7ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/2f0712fe3aeb7124e2e23dbbcd0710c50a26f125",
-                "reference": "2f0712fe3aeb7124e2e23dbbcd0710c50a26f125",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/da54f8bab6ed35ebc204309723a2f20e20c6a7ab",
+                "reference": "da54f8bab6ed35ebc204309723a2f20e20c6a7ab",
                 "shasum": ""
             },
             "require": {
@@ -2035,7 +2035,7 @@
                 }
             ],
             "description": "A script to automatically fix Symfony Coding Standard",
-            "time": "2015-02-14 02:31:24"
+            "time": "2015-02-18 19:08:58"
         },
         {
             "name": "sebastian/diff",
