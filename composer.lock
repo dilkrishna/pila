@@ -955,16 +955,16 @@
         },
         {
             "name": "phing/phing",
-            "version": "2.10.0",
+            "version": "2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phingofficial/phing.git",
-                "reference": "4927448a7bda2e1408d5fcbf7f725dc5bdcaf76d"
+                "reference": "f6c25373cbce5e042dddd9b951a3d5638bb78f67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phingofficial/phing/zipball/4927448a7bda2e1408d5fcbf7f725dc5bdcaf76d",
-                "reference": "4927448a7bda2e1408d5fcbf7f725dc5bdcaf76d",
+                "url": "https://api.github.com/repos/phingofficial/phing/zipball/f6c25373cbce5e042dddd9b951a3d5638bb78f67",
+                "reference": "f6c25373cbce5e042dddd9b951a3d5638bb78f67",
                 "shasum": ""
             },
             "require": {
@@ -979,9 +979,9 @@
                 "pear-pear.php.net/pear_packagefilemanager": "1.7.x",
                 "pear-pear.php.net/pear_packagefilemanager2": "1.0.x",
                 "pear-pear.php.net/xml_serializer": "0.20.x",
-                "pear/pear_exception": "@dev",
+                "pear/pear_exception": "~1.0",
                 "pear/versioncontrol_git": "@dev",
-                "pear/versioncontrol_svn": "@dev",
+                "pear/versioncontrol_svn": "~0.5",
                 "phpdocumentor/phpdocumentor": "2.x",
                 "phploc/phploc": "2.x",
                 "phpmd/phpmd": "~2.2",
@@ -1008,7 +1008,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.9.x-dev"
+                    "dev-master": "2.10.x-dev"
                 }
             },
             "autoload": {
@@ -1041,7 +1041,7 @@
                 "task",
                 "tool"
             ],
-            "time": "2015-02-09 20:05:38"
+            "time": "2015-02-19 15:49:46"
         },
         {
             "name": "propel/propel-bundle",
@@ -1985,12 +1985,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "da54f8bab6ed35ebc204309723a2f20e20c6a7ab"
+                "reference": "a24717350ed4a34443f17e943c50907f67e59015"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/da54f8bab6ed35ebc204309723a2f20e20c6a7ab",
-                "reference": "da54f8bab6ed35ebc204309723a2f20e20c6a7ab",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/a24717350ed4a34443f17e943c50907f67e59015",
+                "reference": "a24717350ed4a34443f17e943c50907f67e59015",
                 "shasum": ""
             },
             "require": {
@@ -2035,7 +2035,7 @@
                 }
             ],
             "description": "A script to automatically fix Symfony Coding Standard",
-            "time": "2015-02-18 19:08:58"
+            "time": "2015-02-19 17:16:51"
         },
         {
             "name": "sebastian/diff",
