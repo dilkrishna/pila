@@ -25,6 +25,14 @@ class Builder extends ContainerAware
                 'menu.user.logout',
                 array('route' => 'fos_user_security_logout')
             )->setExtra('translation_domain', 'editor');
+        } else {
+            $menu->addChild('menu.user.signin',
+                array('route' => 'fos_user_security_login')
+            )->setExtra('translation_domain', 'editor');
+
+            $menu->addChild('menu.user.signup',
+                array('route' => 'fos_user_registration_register')
+            )->setExtra('translation_domain', 'editor');
         }
 
         return $menu;
