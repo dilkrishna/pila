@@ -55,9 +55,7 @@
 				</div>
 				<div class="hidden-xs">
 					<nav class="navbar" role="navigation">
-						{% if is_granted('ROLE_USER') %}
 							{{ knp_menu_render('FrontendBundle:Builder:userMenu', { style: 'navbar-right' }) }}
-						{% endif %}
                         {% block main_menu %}{% endblock %}
 					</nav>
 				</div>
