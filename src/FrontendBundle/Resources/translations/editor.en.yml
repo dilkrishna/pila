@@ -4,3 +4,5 @@ menu:
     user:
         logout:      Logout
         welcome:     Welcome %username%
+        signin:      Sign in
+        signup:      Sign Up
