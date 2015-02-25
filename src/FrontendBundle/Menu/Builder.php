@@ -22,6 +22,10 @@ class Builder extends ContainerAware
                 ->setExtra('translation_params', array('%username%' => $user->getUsername()));
 
             $menu->addChild(
+                'menu.user.document',
+                array('route' => 'document')
+            )->setExtra('translation_domain', 'editor');
+            $menu->addChild(
                 'menu.user.logout',
                 array('route' => 'fos_user_security_logout')
             )->setExtra('translation_domain', 'editor');

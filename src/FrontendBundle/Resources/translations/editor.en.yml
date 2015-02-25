@@ -2,6 +2,7 @@ copyright:  Copyright %year% United Asian Management Limited. All rights reserve
 
 menu:
     user:
+        document:    Documents
         logout:      Logout
         welcome:     Welcome %username%
         signin:      Sign in
