@@ -2,19 +2,22 @@
 
 {% block head_style %}
 	{{ parent() }}
-	{% block structured_document_content_head_style %}
+	{% block structured_document_head_style %}
 	{% endblock %}
 	
 {% endblock head_style %}
 
 {% block head_script %}
 	{{ parent() }}
-		{% block structured_document_content_script %}
+		{% block structured_document_head_script %}
 		{% endblock %}
 {% endblock head_script %}
 
-{% block structured_document_content_page_class %}{% endblock %}
-{% block structured_document_content_page_title %}{% endblock %}
+{% block page_class -%}{% block structured_document_page_class %}{% endblock %}{%- endblock %}
+
+{% block page_title %}
+	{% block structured_document_page_title %}{% endblock %}
+{% endblock %}
 
 {% block content %}
 	{% block structured_document_content %}{% endblock %}
@@ -22,5 +25,5 @@
 
 {% block foot_script %}
 	{{ parent() }}
-	{% block structured_document_content_foot_script %}{% endblock %}
+	{% block structured_document_foot_script %}{% endblock %}
 {% endblock foot_script %}
