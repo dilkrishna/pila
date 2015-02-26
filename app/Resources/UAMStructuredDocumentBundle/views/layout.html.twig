@@ -4,12 +4,17 @@
 	{{ parent() }}
 	{% block structured_document_head_style %}
 	{% endblock %}
-	
+
 {% endblock head_style %}
 
 {% block head_script %}
 	{{ parent() }}
 		{% block structured_document_head_script %}
+			<script>
+				var structured_document = {
+					 locale: "{{ app.request.locale }}"
+				};
+			</script>
 		{% endblock %}
 {% endblock head_script %}
 
