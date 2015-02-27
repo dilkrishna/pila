@@ -23,7 +23,7 @@ class Builder extends ContainerAware
 
             $menu->addChild(
                 'menu.user.document',
-                array('route' => 'document')
+                array('route' => 'uam_document')
             )->setExtra('translation_domain', 'editor');
             $menu->addChild(
                 'menu.user.logout',
