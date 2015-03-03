@@ -2,7 +2,7 @@ parameters:
      security.authentication.success_handler.class: FrontendBundle\Handler\LoginSuccessHandler
 
 services:
-    security.authentication.login_success_handler:
+    editor.security.authentication.login_success_handler:
         class: %security.authentication.success_handler.class%
         public: false
         arguments:  [@router, @security.context]
