@@ -71,14 +71,17 @@
 			{% endblock %}
 		</header>
 
-	<div class="main {% block page_class -%}{%- endblock %}">
-		<div class="container-fluid">
-			<div class="content">
-				{% include "UAMBootstrapBundle::flash.html.twig" %}
-				{% block content %}<h1>page content</h1>{% endblock content %}
+	{% block main %}
+		<div class="{% block page_class -%}{%- endblock %}">
+			<div class="container">
+				<h1>{% block page_title %}{% endblock %}</h1>
+				<div class="content">
+					{% include "UAMBootstrapBundle::flash.html.twig" %}
+					{% block content %}<h1>page content</h1>{% endblock content %}
+				</div>
 			</div>
 		</div>
-	</div>
+	{% endblock %}
 
 	</section>
 </section>
