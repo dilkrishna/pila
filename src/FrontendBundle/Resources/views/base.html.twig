@@ -1,90 +1,104 @@
-{% extends "UAMBootstrapBundle::stickyfooter.html.twig" %}
-
 {% trans_default_domain "editor" %}
 
-{% block head_style %}
-	{{ parent() }}
-	{% stylesheets filter="cssrewrite"
-		'bundles/frontend/css/common.css'
-	%}
-		<link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
-	{% endstylesheets %}
-{% endblock head_style %}
+{% block html_tag %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+{% endblock html_tag %}
 
-{% block head_script %}
-	{{ parent() }}
-	<script>
-	var editor = {
-		locale: "{{ app.request.locale }}"
-	};
-	</script>
-{% endblock head_script %}
+{% block head %}
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="description" content="{% block description %}{% endblock %}">
+	<meta name="viewport" content="{% block viewport %}width=device-width, initial-scale=1{% endblock %}">
 
-{% block wrapper %}{% endblock %}
-{% block wrapper_close %}{% endblock %}
+	{% block head_style %}
+		{% stylesheets filter="cssrewrite"
+			'bundles/frontend/vendor/bootstrap/dist/css/bootstrap.css'
+			'bundles/frontend/vendor/font-awesome/css/font-awesome.css'
+			'bundles/frontend/css/common.css'
+		%}
+			<link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+		{% endstylesheets %}
+	{% endblock head_style %}
+
+	{% block head_script %}
+	{% endblock head_script %}
+</head>
+{% endblock head %}
+
+{% block body_tag %}
+<body class="{% block body_class %}{% endblock %}">
+{% endblock body_tag %}
+
+{% block body_start %}
+	<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+{% endblock %}
+
+{% block wrapper %}
+<section class="wrapper">
+{% endblock %}
 
 {% block body %}
-	<header>
-		<div class="header-top hidden-xs">
-			<div class="container-fluid">
-				<div class="row">
-					<div id="header-logo" class="col-sm-5 col-md-6">
-						<a href="{{ path('home') }}">
-							{% block logo %}
-								<img src="/bundles/frontend/images/logo-generic-260x66.png" class="img-responsive" />
-							{% endblock %}
-						</a>
-					</div>
-					<div class="header-custom" class="col-sm-7 col-md-6">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="header-bottom" data-spy="affix" data-offset-top="90" class="affix-top">
-			<div class="container-fluid">
-				<div class="visible-xs">
-					<div class="header-logo-responsive">
-						<a href="{{ path('home') }}">
-							<img src="/bundles/frontend/images/logo-generic-150x39.png" />
-						</a>
-						<button class="btn navbar-btn navbar-toggle navbar-right" type="button" data-toggle="offcanvas">
-							<span class="sr-only">{% block navbar_collapse %}collapse sidebar{% endblock %}</span>
-							<span class="fa fa-bars fa-lg"></span>
-						</button>
+<section class="__outer">
+	<section class="__inner">
+		<header role="banner">
+			{% block header %}
+				<div class="navbar navbar-default navbar-fixed-top">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="fa fa-bars"></span>
+							</button>
+							<a class="navbar-brand" href="{{ path('home') }}">
+								{% block brand %}{% trans %}brand{% endtrans %}{% endblock %}
+							</a>
+						</div>
+						<div class="navbar-collapse collapse" id="navbar-main">
+							<div>
+								{{ knp_menu_render('FrontendBundle:Builder:userMenu', { style: 'navbar-right' }) }}
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="hidden-xs">
-					<nav class="navbar" role="navigation">
-							{{ knp_menu_render('FrontendBundle:Builder:userMenu', { style: 'navbar-right' }) }}
-							{% block main_menu %}{% endblock %}
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
+			{% endblock %}
+		</header>
 
-<div class="main {% block page_class -%}{%- endblock %}">
-	<div class="page-header">
+	<div class="main {% block page_class -%}{%- endblock %}">
 		<div class="container-fluid">
-			{% block page_nav %}{% endblock %}
-			<h2 class="content-title">{% block page_title %}Page title{% endblock %}</h2>
+			<div class="content">
+				{% include "UAMBootstrapBundle::flash.html.twig" %}
+				{% block content %}<h1>page content</h1>{% endblock content %}
+			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
-		<div class="content">
-			{% include "UAMBootstrapBundle::flash.html.twig" %}
-			{% block content %}{% endblock content %}
-		</div>
-	</div>
-</div>
 
-<footer class="footer">
-	<div class="container-fluid">
-		<div class="pull-right">{{ uam_version() }}</div>
-		<div class="copyright">
-			{% trans with { '%year%': "now"|date('Y') } %}copyright{% endtrans %}
-		</div>
-	</div>
+	</section>
+</section>
+<footer role="contentinfo">
+	{% block footer %}{% endblock %}
 </footer>
+{% endblock %}
 
-{% endblock body %}
+{% block foot_script %}
+	{% javascripts
+		'bundles/frontend/vendor/jquery/dist/jquery.min.js'
+		'bundles/frontend/vendor/bootstrap/dist/js/bootstrap.min.js'
+	%}
+	<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock foot_script %}
+
+{% block wrapper_close %}
+</section>
+{% endblock %}
+
+</body>
+</html>

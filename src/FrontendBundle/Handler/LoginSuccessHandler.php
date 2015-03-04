@@ -20,6 +20,7 @@ class LoginSuccessHandler extends ContainerAware implements AuthenticationSucces
         $this->router   = $router;
         $this->security = $security;
     }
+
     public function onAuthenticationSuccess(Request $request, TokenInterface $token)
     {
         $session = $request->getSession();
