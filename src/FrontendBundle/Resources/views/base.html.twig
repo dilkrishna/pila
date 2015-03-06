@@ -74,6 +74,7 @@
 	{% block main %}
 		<div class="{% block page_class -%}{%- endblock %}">
 			<div class="container">
+				{% block page_nav %}{% endblock %}
 				<h1>{% block page_title %}{% endblock %}</h1>
 				<div class="content">
 					{% include "UAMBootstrapBundle::flash.html.twig" %}

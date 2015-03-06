@@ -3,8 +3,12 @@
 {% block head_style %}
 	{{ parent() }}
 	{% block structured_document_head_style %}
+		{% stylesheets
+			'bundles/uamstructureddocuemnt/css/document.css'
+		%}
+			<link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+		{% endstylesheets %}
 	{% endblock %}
-
 {% endblock head_style %}
 
 {% block head_script %}
@@ -19,6 +23,10 @@
 {% endblock head_script %}
 
 {% block page_class -%}{% block structured_document_page_class %}{% endblock %}{%- endblock %}
+
+{% block page_nav %}
+	{% block structured_document_page_nav %}{% endblock %}
+{% endblock %}
 
 {% block page_title %}
 	{% block structured_document_page_title %}{% endblock %}
