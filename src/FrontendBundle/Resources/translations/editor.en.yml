@@ -1,6 +1,17 @@
 copyright:  Copyright %year% United Asian Management Limited. All rights reserved.
 brand:      Editor
 
+editor:
+    reset:
+        email:
+            subject: Reset your password %username%!
+            message: |
+                Hello %username%!
+
+                To reset your password - please visit %confirmationUrl%
+
+                Regards,
+                Editor Team.
 menu:
     user:
         document:    Documents
