@@ -64,6 +64,10 @@ body:before {
 	margin-top: -32767px;
 }
 
-.create-term {
-    margin-top: 100px;
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 40px;
+    clear: both;
 }
