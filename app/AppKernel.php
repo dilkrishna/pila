@@ -18,8 +18,8 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-			new UAM\Bundle\BootstrapBundle\UAMBootstrapBundle(),
-			new UAM\Bundle\StructuredDocumentBundle\UAMStructuredDocumentBundle(),
+            new UAM\Bundle\BootstrapBundle\UAMBootstrapBundle(),
+            new UAM\Bundle\StructuredDocumentBundle\UAMStructuredDocumentBundle(),
             new UAM\Bundle\UserBundle\UAMUserBundle(),
             new FrontendBundle\FrontendBundle(),
         );
