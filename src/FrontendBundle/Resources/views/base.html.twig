@@ -25,7 +25,7 @@
 			</div>
 			<div class="navbar-collapse collapse" id="navbar-main">
 				<div>
-{#					{{ knp_menu_render('FrontendBundle:Builder:userMenu', { style: 'navbar-right' }) }}#}
+					{{ knp_menu_render('FrontendBundle:Builder:userMenu', { style: 'navbar-right' }) }}
 				</div>
 			</div>
 		</div>
@@ -44,8 +44,8 @@
 {% endblock %}
 
 {% block footer %}
-	{#<div class="pull-right">{{ uam_version() }}</div>
+{#	<div class="pull-right">{{ uam_version() }}</div>#}
 	<div class="copyright">
 		&copy; {{ "now"|date('Y') }} <a href="http://www.united-asian.com">United Asian Management Limited</a>. {% trans %}copyright{% endtrans%}
-	</div>#}
+	</div>
 {% endblock %}
