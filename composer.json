@@ -28,6 +28,9 @@
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
         "friendsofsymfony/user-bundle": "2.0.*@dev",
+        "knplabs/knp-menu": "~2",
+        "knplabs/knp-menu-bundle":"~2",
+        "willdurand/propel-typehintable-behavior": "~1.0",
         "uam/bootstrap-bundle": "~4.1",
         "uam/user-bundle": "~4.0",
         "uam/structured-document-bundle": "dev-master"
