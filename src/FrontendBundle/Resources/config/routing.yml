@@ -1,0 +1,3 @@
+frontend_homepage:
+    resource: "@FrontendBundle/Controller/FrontPageController.php"
+    type:      annotation

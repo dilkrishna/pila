@@ -34,7 +34,12 @@ twig:
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [ ]
+    bundles:
+        - FOSUserBundle
+        - FrontendBundle
+        - UAMBootstrapBundle
+        - UAMUserBundle
+
     #java: /usr/bin/java
     filters:
         cssrewrite: ~

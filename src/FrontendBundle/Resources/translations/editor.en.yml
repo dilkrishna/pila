@@ -1,0 +1,21 @@
+copyright:  All rights reserved.
+brand:      Editor
+
+editor:
+    reset:
+        email:
+            subject: Reset your password %username%!
+            message: |
+                Hello %username%!
+
+                To reset your password - please visit %confirmationUrl%
+
+                Regards,
+                Editor Team.
+menu:
+    user:
+        document:    Documents
+        logout:      Logout
+        welcome:     Welcome %username%
+        signin:      Sign in
+        signup:      Sign Up
