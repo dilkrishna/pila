@@ -1,3 +1,10 @@
 frontend:
     resource: "@FrontendBundle/Resources/config/routing.yml"
     prefix:   /
+
+uam_document:
+    resource: "@UAMStructuredDocumentBundle/Controller"
+    prefix:   /document
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

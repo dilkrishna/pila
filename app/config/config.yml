@@ -38,6 +38,7 @@ assetic:
         - FOSUserBundle
         - FrontendBundle
         - UAMBootstrapBundle
+        - UAMStructuredDocumentBundle
         - UAMUserBundle
 
     #java: /usr/bin/java
