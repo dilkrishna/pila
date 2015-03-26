@@ -1,5 +1,5 @@
 {
-    "name": "uam/symfony2-skeleton",
+    "name": "editor/www",
     "license": "MIT",
     "type": "project",
     "description": "Symfony Skeleton app",
@@ -36,6 +36,7 @@
         "uam/structured-document-bundle": "dev-master"
     },
     "require-dev": {
+        "fabpot/php-cs-fixer": "2.0.*@dev",
         "sensio/generator-bundle": "~2.3"
     },
     "scripts": {
@@ -57,6 +58,9 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
         ]
+    },
+    "config": {
+        "bin-dir": "vendor/bin"
     },
     "extra": {
         "symfony-app-dir": "app",
