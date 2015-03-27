@@ -14,7 +14,8 @@ editor:
                 Editor Team.
 menu:
     user:
-        document:    Documents
+        documents:   Documents
+        document:    Document
         logout:      Logout
         welcome:     Welcome %username%
         signin:      Sign in

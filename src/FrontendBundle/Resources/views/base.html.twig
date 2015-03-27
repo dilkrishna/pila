@@ -47,7 +47,8 @@
 {% endblock %}
 
 {% block footer %}
-	<div class="pull-right">{{ uam_version() }}</div>
+{#	Need to modify#}
+<div class="pull-right"><a href="{{ path('home') }}">{% trans %}menu.user.document{% endtrans%}</a></div>
 	<div class="copyright">
 		&copy; {{ "now"|date('Y') }} <a href="http://www.united-asian.com">United Asian Management Limited</a>. {% trans %}copyright{% endtrans%}
 	</div>
