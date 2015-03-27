@@ -1861,7 +1861,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.united-asian.com:editor/StructuredDocumentBundle.git",
-                "reference": "dfceaaaffd33c8dc5ae7cdd4d7628580202d70a0"
+                "reference": "f281cb9b28e190fc76f79cf2725ed412542c69f6"
             },
             "require": {
                 "cebe/markdown": "*",
@@ -1900,7 +1900,7 @@
                 "bundle",
                 "symfony"
             ],
-            "time": "2015-03-26 11:48:02"
+            "time": "2015-03-27 08:16:27"
         },
         {
             "name": "uam/user-bundle",
@@ -1994,12 +1994,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "7898f3e50eab97c316925252a8fada33b2026264"
+                "reference": "e3656d5117bb62eb55bc6a382b1f5d8eec48ba82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/7898f3e50eab97c316925252a8fada33b2026264",
-                "reference": "7898f3e50eab97c316925252a8fada33b2026264",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/e3656d5117bb62eb55bc6a382b1f5d8eec48ba82",
+                "reference": "e3656d5117bb62eb55bc6a382b1f5d8eec48ba82",
                 "shasum": ""
             },
             "require": {
@@ -2044,7 +2044,7 @@
                 }
             ],
             "description": "A script to automatically fix Symfony Coding Standard",
-            "time": "2015-03-22 17:02:57"
+            "time": "2015-03-26 21:21:45"
         },
         {
             "name": "sebastian/diff",
