@@ -36,14 +36,18 @@
 {% endblock %}
 
 {% block main %}
-<div class="container">
-	<div class="{% block page_class %}{% endblock %}">
+	<div class="container {% block page_class %}{% endblock %}">
 		{% block page_nav %}{% endblock %}
-		<h2 class="content_title">{% block page_title %}{% endblock %}</h2>
-		{% include "UAMBootstrapBundle::flash.html.twig" %}
-		{% block content %}<h1>page content</h1>{% endblock %}
+		<h1>{% block page_title %}{% endblock %}</h1>
+
+		{% block flash -%}
+			{% include "UAMBootstrapBundle::flash.html.twig" %}
+		{%- endblock %}
+
+		<div class="content">
+			{% block content %}{% endblock %}
+		</div>
 	</div>
-</div>
 {% endblock %}
 
 {% block footer %}
