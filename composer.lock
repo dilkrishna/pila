@@ -737,7 +737,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "KnpLabs",
+                    "name": "Knplabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -1080,7 +1080,7 @@
             ],
             "authors": [
                 {
-                    "name": "William DURAND",
+                    "name": "William Durand",
                     "email": "william.durand1@gmail.com"
                 }
             ],
@@ -1814,11 +1814,11 @@
         },
         {
             "name": "uam/bootstrap-bundle",
-            "version": "4.1.2",
+            "version": "4.1.3",
             "source": {
                 "type": "git",
                 "url": "git@gitlab.united-asian.com:uam-private/UAMBootstrapBundle",
-                "reference": "56c0d046388f8d9370d6795219b55aa30b6984d9"
+                "reference": "47bfb8f62970105cc718c02ec708d06254ff6690"
             },
             "require": {
                 "symfony/framework-bundle": "~2.3"
@@ -1853,7 +1853,7 @@
                 "template",
                 "twig"
             ],
-            "time": "2015-01-16 04:50:58"
+            "time": "2015-04-01 14:51:29"
         },
         {
             "name": "uam/structured-document-bundle",
@@ -1861,7 +1861,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.united-asian.com:editor/StructuredDocumentBundle.git",
-                "reference": "f026772ca5e9a0fe407f01488a010a306bca133c"
+                "reference": "49e5cf264acf29ae539ee79b2d75fc4888f7af45"
             },
             "require": {
                 "cebe/markdown": "*",
@@ -1900,7 +1900,7 @@
                 "bundle",
                 "symfony"
             ],
-            "time": "2015-04-01 11:42:38"
+            "time": "2015-04-01 15:17:38"
         },
         {
             "name": "uam/user-bundle",
