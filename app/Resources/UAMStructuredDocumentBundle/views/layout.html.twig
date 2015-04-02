@@ -3,6 +3,11 @@
 {% block head_style %}
 	{{ parent() }}
 	{% block structured_document_head_style %}
+		{% stylesheets
+			'bundles/uamstructureddocument/css/document.css'
+		%}
+			<link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+		{% endstylesheets %}
 	{% endblock %}
 {% endblock head_style %}
 
