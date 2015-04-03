@@ -6,6 +6,9 @@
 	{{ parent() }}
 	{% stylesheets filter="cssrewrite"
 		'bundles/frontend/css/common.css'
+		'bundles/frontend/css/table.css'
+		'bundles/uambootstrap/css/datatables.css'
+
 	%}
 		<link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
 	{% endstylesheets %}
@@ -33,18 +36,23 @@
 {% endblock %}
 
 {% block main %}
-<div class="container">
-	<div class="{% block page_class %}{% endblock %}">
+	<div class="container {% block page_class %}{% endblock %}">
 		{% block page_nav %}{% endblock %}
-		<h2 class="content_title">{% block page_title %}{% endblock %}</h2>
-		{% include "UAMBootstrapBundle::flash.html.twig" %}
-		{% block content %}<h1>page content</h1>{% endblock %}
+		<h1>{% block page_title %}{% endblock %}</h1>
+
+		{% block flash -%}
+			{% include "UAMBootstrapBundle::flash.html.twig" %}
+		{%- endblock %}
+
+		<div class="content">
+			{% block content %}{% endblock %}
+		</div>
 	</div>
-</div>
 {% endblock %}
 
 {% block footer %}
-	<div class="pull-right">{{ uam_version() }}</div>
+{#	Need to modify#}
+<div class="pull-right"><a href="{{ path('home') }}">{% trans %}menu.user.footer.document{% endtrans%}</a></div>
 	<div class="copyright">
 		&copy; {{ "now"|date('Y') }} <a href="http://www.united-asian.com">United Asian Management Limited</a>. {% trans %}copyright{% endtrans%}
 	</div>
