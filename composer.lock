@@ -1856,7 +1856,7 @@
             "source": {
                 "type": "git",
                 "url": "git@gitlab.united-asian.com:editor/StructuredDocumentBundle.git",
-                "reference": "0691b73090d2f51e8948142faba99f674d40c6ac"
+                "reference": "8e064b57a735209ae3c0ac8538357aa2cdf0bc6b"
             },
             "require": {
                 "cebe/markdown": "*",
@@ -1895,7 +1895,7 @@
                 "bundle",
                 "symfony"
             ],
-            "time": "2015-04-03 10:00:47"
+            "time": "2015-04-03 10:55:37"
         },
         {
             "name": "uam/user-bundle",
