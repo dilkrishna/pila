@@ -29,6 +29,7 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "friendsofsymfony/user-bundle": "2.0.*@dev",
         "knplabs/knp-menu": "~2",
+        "knplabs/knp-markdown-bundle": "~1.3",
         "knplabs/knp-menu-bundle":"~2",
         "willdurand/propel-typehintable-behavior": "~1.0",
         "uam/bootstrap-bundle": "~4.1",
