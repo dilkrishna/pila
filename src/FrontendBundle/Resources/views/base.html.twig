@@ -1,6 +1,8 @@
-{% extends "UAMBootstrapBundle::stickyfooter.html.twig" %}
+{% extends is_granted("ROLE_USER") ? "UAMBootstrapBundle::leftsidebar.html.twig" : "UAMBootstrapBundle::stickyfooter.html.twig" %}
 
 {% trans_default_domain "editor" %}
+
+{% set container_class = "container-fluid" %}
 
 {% block head_style %}
 	{{ parent() }}
@@ -16,7 +18,7 @@
 
 {% block header %}
 	<div class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
@@ -35,8 +37,15 @@
 	</div>
 {% endblock %}
 
+{% block container_class %}container-fluid{% endblock %}
+
+{% block sidebar %}
+	sidebar
+{% endblock %}
+
+{#
 {% block main %}
-	<div class="container {% block page_class %}{% endblock %}">
+	<div class="container-fluid {% block page_class %}{% endblock %}">
 		{% block page_nav %}{% endblock %}
 		<h1>{% block page_title %}{% endblock %}</h1>
 
@@ -49,11 +58,13 @@
 		</div>
 	</div>
 {% endblock %}
+#}
 
 {% block footer %}
-{#	Need to modify#}
-<div class="pull-right"><a href="{{ path('home') }}">{% trans %}menu.user.footer.document{% endtrans%}</a></div>
+<div class="container-fluid">
+	<div class="pull-right"><a href="{{ path('home') }}">{% trans %}tos{% endtrans%}</a></div>
 	<div class="copyright">
 		&copy; {{ "now"|date('Y') }} <a href="http://www.united-asian.com">United Asian Management Limited</a>. {% trans %}copyright{% endtrans%}
 	</div>
+</div>
 {% endblock %}
