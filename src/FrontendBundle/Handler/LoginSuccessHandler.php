@@ -30,7 +30,7 @@ class LoginSuccessHandler extends ContainerAware implements AuthenticationSucces
             $url = $session->get($target_path_key);
         } elseif ($referer_url = $this->getRefererUrl($request)) {
             $url = $referer_url;
-        } elseif ($this->security->isGranted('ROLE_ADMIN')) {
+        } elseif ($this->security->isGranted('ROLE_USER')) {
             //TODO later change to admin home page
             $url = $this->router->generate('uam_document');
         } else {

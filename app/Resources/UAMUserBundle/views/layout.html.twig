@@ -19,11 +19,11 @@
 
 {% block page_title -%}{% block uam_user_page_title %}{% endblock %}{%- endblock %}
 
-{% block content %}
+{% block main %}
 	{% block uam_user_content %}
 		{% block fos_user_content %}{% endblock %}
 	{% endblock %}
-{% endblock content %}
+{% endblock %}
 
 {% block foot_script %}
 	{{ parent() }}
