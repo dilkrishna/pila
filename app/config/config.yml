@@ -87,3 +87,7 @@ fos_user:
 uam_user:
     profile:
         enabled: false
+
+uam_structured_document:
+#    markdown:
+#        service: uam_structured_document.markdown.parser.standard
